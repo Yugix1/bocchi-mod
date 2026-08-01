@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "bocchi-mod",
+	"version": "${version}",
+	"name": "Bocchi Melodies",
+	"description": "An addon for Immersive Melodies that adds Kessoku Band's instruments, plus some other cool stuff related to Bocchi the Rock",
+	"authors": [
+		"Yugix"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bocchi-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yugix.BocchiMod"
+		],
+		"client": [
+			"com.yugix.client.BocchiModClient"
+		]
+	},
+	"mixins": [
+		"bocchi-mod.mixins.json",
+		{
+			"config": "bocchi-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
