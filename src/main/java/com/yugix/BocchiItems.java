@@ -7,6 +7,8 @@ import immersive_melodies.client.animation.ItemAnimators;
 import immersive_melodies.client.animation.animators.Animator;
 import immersive_melodies.client.animation.animators.LuteAnimator;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -32,6 +34,7 @@ public class BocchiItems {
         ItemAnimators.register(location, animator);
         Sounds.Instrument instrument = new Sounds.Instrument(namespace, name);
         Item item = new BocchiInstrumentItem(baseProps(), instrument, sustain, offset, subtitle, owner);
+        item = Registry.register(BuiltInRegistries.ITEM, location, item);
         customInventoryModels.add(location);
         return item;
     }
