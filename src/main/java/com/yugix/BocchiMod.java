@@ -1,7 +1,9 @@
 package com.yugix;
 
+import com.yugix.item.BocchiInstrumentItem;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 
 import org.slf4j.Logger;
@@ -20,8 +22,9 @@ public class BocchiMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
 		LOGGER.info("Hello Fabric world!");
+		BocchiItems.initialize();
+		BocchiItemGroup.init();
 	}
 
 	public static ResourceLocation id(String path) {
