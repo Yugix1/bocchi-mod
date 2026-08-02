@@ -32,6 +32,7 @@ public class BocchiMod implements ModInitializer {
 
 		BocchiItems.initialize();
 		initItemGroup();
+		BocchiAttributes.init();
 	}
 
 	public static void initItemGroup(){
@@ -45,6 +46,8 @@ public class BocchiMod implements ModInitializer {
 			itemGroup.accept(BocchiItems.BOCCHI_GUITAR);
 			itemGroup.accept(BocchiItems.KITA_GUITAR);
 			itemGroup.accept(BocchiItems.RYO_BASS);
+			itemGroup.accept(BocchiItems.KESSOKU_BAND);
+			itemGroup.accept(BocchiItems.BOWTIE);
 		});
 	}
 

@@ -12,11 +12,22 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	// immersive melodies
 	maven {
 		name = "reposiliteRepositoryArtifacts"
 		url = uri("https://maven.conczin.net/Artifacts")
 	}
+	// Trinkets
+	maven {
+		name = "Sleeping Town"
+		url = "https://repo.sleeping.town/"
+	}
+	maven {
+		name = "Ladysnake Libs"
+		url = 'https://maven.ladysnake.org/releases'
+	}
 }
+
 
 loom {
 	splitEnvironmentSourceSets()
@@ -39,6 +50,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	modImplementation("immersive_melodies:immersive_melodies-fabric:0.6.4+1.21.1")
+	modImplementation "dev.emi:trinkets:3.10.0"
 }
 
 processResources {

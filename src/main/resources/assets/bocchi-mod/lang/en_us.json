@@ -1,4 +1,6 @@
 {
+  "itemGroup.bocchi-mod": "Bocchi Melodies",
+
   "item.bocchi-mod.bocchi_guitar": "Gibson Les Paul Custom (1968 Reissue Ebony)",
   "item.bocchi-mod.bocchi_guitar.subtitle": "\"Maybe even someone like me can shine if I'm in a band!\"",
   "item.bocchi-mod.bocchi_guitar.owner": "A guitar belonging to Hitori Gotoh.",
@@ -7,5 +9,11 @@
   "item.bocchi-mod.kita_guitar.owner": "A guitar belonging to Ikuyo Kita.",
   "item.bocchi-mod.ryo_bass": "Fender Mexican Standard Precision Bass (Olympic White)",
   "item.bocchi-mod.ryo_bass.subtitle": "\"Abandoning your uniqueness is equivalent to dying.\"",
-  "item.bocchi-mod.ryo_bass.owner": "A bass belonging to Ryo Yamada."
+  "item.bocchi-mod.ryo_bass.owner": "A bass belonging to Ryo Yamada.",
+
+  "item.bocchi-mod.kessoku_band": "Kessoku Band",
+  "item.bocchi-mod.kessoku_band.subtitle": "\"It's the worst pun! We're totally changing it!\"",
+  "item.bocchi-mod.nijika_bowtie": "Nijika's Red Bowtie",
+  "item.bocchi-mod.nijika_bowtie.subtitle": "\"Is this what they call a sister complex?\"",
+  "bocchi-mod.health_regeneration": "HP every 29.5s"
 }
