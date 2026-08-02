@@ -2,7 +2,6 @@ package com.yugix.item;
 
 import immersive_melodies.Sounds;
 import immersive_melodies.item.InstrumentItem;
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -22,12 +21,8 @@ public class BocchiInstrumentItem extends InstrumentItem {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> components, TooltipFlag tooltipFlag) {
-        components.add(subtitle);
         components.add(owner);
-        // State
-        if (isPlaying(stack)) {
-            components.add(Component.translatable("immersive_melodies.playing").withStyle(ChatFormatting.GREEN));
-        }
+        components.add(subtitle);
         super.appendHoverText(stack, context, components, tooltipFlag);
     }
 }
