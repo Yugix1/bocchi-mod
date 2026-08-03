@@ -22,10 +22,10 @@ repositories {
 		name = "Sleeping Town"
 		url = "https://repo.sleeping.town/"
 	}
-	maven {
-		name = "Ladysnake Libs"
-		url = 'https://maven.ladysnake.org/releases'
-	}
+	maven { url 'https://maven.wispforest.io/releases' }
+	maven { url 'https://maven.su5ed.dev/releases' }
+	maven { url 'https://maven.fabricmc.net' }
+	maven { url 'https://maven.shedaniel.me/' }
 }
 
 
@@ -50,7 +50,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	modImplementation("immersive_melodies:immersive_melodies-fabric:0.6.4+1.21.1")
-	modImplementation "dev.emi:trinkets:3.10.0"
+	modImplementation("io.wispforest:accessories-fabric:1.1.0-beta.53+1.21.1")
 }
 
 processResources {

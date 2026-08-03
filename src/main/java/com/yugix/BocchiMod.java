@@ -1,5 +1,8 @@
 package com.yugix;
 
+import com.yugix.accessories.BocchiAccessories;
+import com.yugix.accessories.BowtieAccessory;
+import com.yugix.item.BocchiItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -31,6 +34,7 @@ public class BocchiMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		BocchiItems.initialize();
+		BocchiAccessories.init();
 		initItemGroup();
 		BocchiAttributes.init();
 	}
