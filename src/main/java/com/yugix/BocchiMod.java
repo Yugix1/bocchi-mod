@@ -1,10 +1,12 @@
 package com.yugix;
 
 import com.yugix.accessories.BocchiAccessories;
-import com.yugix.accessories.BowtieAccessory;
+import com.yugix.block.BocchiBlocks;
 import com.yugix.item.BocchiItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
@@ -15,8 +17,11 @@ import net.minecraft.resources.ResourceLocation;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.minecraft.core.registries.Registries;
 
 public class BocchiMod implements ModInitializer {
 	public static final String MOD_ID = "bocchi-mod";
@@ -37,7 +42,12 @@ public class BocchiMod implements ModInitializer {
 		BocchiAccessories.init();
 		initItemGroup();
 		BocchiAttributes.init();
+		BocchiBlocks.init();
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_STRUCTURES, RHODOCHROSITE_GEODE_PLACED_KEY);
 	}
+
+
+	public static final ResourceKey<PlacedFeature> RHODOCHROSITE_GEODE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath("bocchi-mod","rhodochrosite_geode"));
 
 	public static void initItemGroup(){
 		final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, "item_group"));
