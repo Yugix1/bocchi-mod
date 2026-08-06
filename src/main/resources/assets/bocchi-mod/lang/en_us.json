@@ -13,8 +13,7 @@
 
   "item.bocchi-mod.kessoku_band": "Kessoku Band",
   "item.bocchi-mod.kessoku_band.subtitle": "\"It's the worst pun! We're totally changing it!\"",
-  "item.bocchi-mod.kessoku_band.effect": " +1 Attack Damage",
   "item.bocchi-mod.nijika_bowtie": "Nijika's Red Bowtie",
   "item.bocchi-mod.nijika_bowtie.subtitle": "\"Is this what they call a sister complex?\"",
-  "item.bocchi-mod.nijika_bowtie.effect": " Recover 1 HP every 29.5s"
+  "bocchi-mod.health_regen": "HP every 5.29s"
 }

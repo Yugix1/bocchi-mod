@@ -22,11 +22,11 @@ public class BocchiAttributes {
         return Registry.registerForHolder(BuiltInRegistries.ATTRIBUTE, identifier, entityAttribute);
     }
 
-    public static final Holder<Attribute> HEALTH_REGENERATION = register(
-            "health_regeneration",
+    public static final Holder<Attribute> HEALTH_REGEN = register(
+            "health_regen",
             0.0,
             0.0,
-            Double.MAX_VALUE,
+            32.0,
             false
     );
 
