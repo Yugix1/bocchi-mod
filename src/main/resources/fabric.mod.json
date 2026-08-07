@@ -15,6 +15,9 @@
 	"icon": "assets/bocchi-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.yugix.datagen.BocchiDataGenerator"
+		],
 		"main": [
 			"com.yugix.BocchiMod"
 		],

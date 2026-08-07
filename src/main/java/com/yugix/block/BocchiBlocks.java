@@ -17,7 +17,7 @@ public class BocchiBlocks {
     public static void init(){}
 
     public static final Block RHODOCHROSITE_BLOCK = register(new Block(BlockBehaviour.Properties.of().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()), "rhodochrosite_block");
-    public static final Block BUDDING_RHODOCHROSITE_BLOCK = register(new BuddingRhodochrosite(BlockBehaviour.Properties.of().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()), "budding_rhodochrosite_block");
+    public static final Block BUDDING_RHODOCHROSITE_BLOCK = register(new BuddingRhodochrosite(BlockBehaviour.Properties.of().strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops().randomTicks()), "budding_rhodochrosite_block");
     public static final Block SMALL_RHODOCHROSITE_BUD = register(new AmethystClusterBlock(3.0F, 4.0F,BlockBehaviour.Properties.ofLegacyCopy(AMETHYST_CLUSTER).sound(SoundType.SMALL_AMETHYST_BUD).lightLevel((blockStatex) -> 2)), "small_rhodochrosite_bud");
     public static final Block MEDIUM_RHODOCHROSITE_BUD = register(new AmethystClusterBlock(3.0F, 4.0F,BlockBehaviour.Properties.ofLegacyCopy(AMETHYST_CLUSTER).sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel((blockStatex) -> 6)), "medium_rhodochrosite_bud");
     public static final Block LARGE_RHODOCHROSITE_BUD = register(new AmethystClusterBlock(3.0F, 4.0F,BlockBehaviour.Properties.ofLegacyCopy(AMETHYST_CLUSTER).sound(SoundType.LARGE_AMETHYST_BUD).lightLevel((blockStatex) -> 10)), "large_rhodochrosite_bud");

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster"
+    },
+    "facing=west": {
+      "model": "bocchi-mod:block/rhodochrosite_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

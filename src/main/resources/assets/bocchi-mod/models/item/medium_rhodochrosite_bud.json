@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bocchi-mod:item/kessoku_band"
+    "layer0": "bocchi-mod:block/medium_rhodochrosite_bud"
   }
-
 }

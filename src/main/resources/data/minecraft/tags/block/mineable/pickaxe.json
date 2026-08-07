@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "bocchi-mod:small_rhodochrosite_bud",
+    "bocchi-mod:medium_rhodochrosite_bud",
+    "bocchi-mod:large_rhodochrosite_bud",
+    "bocchi-mod:rhodochrosite_cluster",
+    "bocchi-mod:rhodochrosite_block",
+    "bocchi-mod:budding_rhodochrosite_block"
+  ]
+}

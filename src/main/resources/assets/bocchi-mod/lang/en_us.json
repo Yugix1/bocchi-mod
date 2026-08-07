@@ -15,5 +15,12 @@
   "item.bocchi-mod.kessoku_band.subtitle": "\"It's the worst pun! We're totally changing it!\"",
   "item.bocchi-mod.nijika_bowtie": "Nijika's Red Bowtie",
   "item.bocchi-mod.nijika_bowtie.subtitle": "\"Is this what they call a sister complex?\"",
-  "bocchi-mod.health_regen": "HP every 5.29s"
+  "bocchi-mod.health_regen": "HP every 5.29s",
+
+  "block.bocchi-mod.rhodochrosite_block": "Rhodochrosite Block",
+  "block.bocchi-mod.budding_rhodochrosite_block": "Budding Rhodochrosite",
+  "block.bocchi-mod.small_rhodochrosite_bud": "Small Rhodochrosite Bud",
+  "block.bocchi-mod.medium_rhodochrosite_bud": "Medium Rhodochrosite Bud",
+  "block.bocchi-mod.large_rhodochrosite_bud": "Large Rhodochrosite Bud",
+  "block.bocchi-mod.rhodochrosite_cluster": "Rhodochrosite"
 }

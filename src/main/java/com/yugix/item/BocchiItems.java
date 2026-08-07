@@ -22,7 +22,6 @@ public class BocchiItems {
     public static void initialize(){
     }
     public static final Item KESSOKUNITE_CRYSTAL = register(new Item(new Item.Properties()), "kessokunite_crystal");
-    public static final Item RHODOCHROSITE = register(new Item(new Item.Properties()), "rhodochrosite");
 
     public static final Item BOCCHI_GUITAR = registerInstrument(BocchiMod.MOD_ID, "bocchi_guitar", new LuteAnimator(), 300, new Vector3f(0.0f, 0.0f, 0.5f),
             Component.translatable("item.bocchi-mod.bocchi_guitar.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-mod.bocchi_guitar.owner").withStyle(ChatFormatting.GRAY));
