@@ -30,12 +30,9 @@ repositories {
 
 
 loom {
-	splitEnvironmentSourceSets()
-
 	mods {
 		"bocchi-mod" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 }
