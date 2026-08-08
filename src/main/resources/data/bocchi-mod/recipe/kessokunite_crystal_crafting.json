@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "bocchi-mod:rhodochrosite_cluster"
+    }
+  ],
+  "result": {
+    "id": "bocchi-mod:kessokunite_crystal"
+  }
+}

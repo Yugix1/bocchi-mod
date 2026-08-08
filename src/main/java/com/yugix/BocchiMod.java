@@ -68,6 +68,7 @@ public class BocchiMod implements ModInitializer {
 			itemGroup.accept(BocchiBlocks.MEDIUM_RHODOCHROSITE_BUD);
 			itemGroup.accept(BocchiBlocks.LARGE_RHODOCHROSITE_BUD);
 			itemGroup.accept(BocchiBlocks.RHODOCHROSITE_CLUSTER);
+			itemGroup.accept(BocchiItems.KESSOKUNITE_CRYSTAL);
 		});
 	}
 
