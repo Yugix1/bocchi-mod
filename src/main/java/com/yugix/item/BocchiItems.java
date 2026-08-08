@@ -31,6 +31,7 @@ public class BocchiItems {
             Component.translatable("item.bocchi-mod.ryo_bass.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-mod.ryo_bass.owner").withStyle(ChatFormatting.GRAY));
 
     public static final Item KESSOKU_BAND = register(new Item(new Item.Properties().stacksTo(1)), "kessoku_band");
+    public static final Item WORN_KESSOKU_BAND = register(new Item(new Item.Properties()), "worn_kessoku_band");
     public static final Item BOWTIE = register(new Item(new Item.Properties().stacksTo(1)), "nijika_bowtie");
 
     static Item register(Item item, String id){

@@ -26,11 +26,7 @@
 		]
 	},
 	"mixins": [
-		"bocchi-mod.mixins.json",
-		{
-			"config": "bocchi-mod.client.mixins.json",
-			"environment": "client"
-		}
+		"bocchi-mod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",

@@ -1,5 +1,6 @@
 package com.yugix.client;
 
+import com.yugix.accessories.BocchiAccessories;
 import com.yugix.block.BocchiBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -13,5 +14,6 @@ public class BocchiModClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.MEDIUM_RHODOCHROSITE_BUD, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.LARGE_RHODOCHROSITE_BUD, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.RHODOCHROSITE_CLUSTER, RenderType.cutout());
+		BocchiAccessories.initClient();
 	}
 }

@@ -28,5 +28,6 @@ public class BocchiModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
         itemModelGenerator.generateFlatItem(BocchiItems.BOWTIE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(BocchiItems.KESSOKU_BAND, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(BocchiItems.WORN_KESSOKU_BAND, ModelTemplates.FLAT_ITEM);
     }
 }
