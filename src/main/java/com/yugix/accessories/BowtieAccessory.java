@@ -1,10 +1,12 @@
 package com.yugix.accessories;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.yugix.BocchiAttributes;
 import com.yugix.BocchiMod;
 import com.yugix.item.BocchiItems;
 import io.wispforest.accessories.api.AccessoriesAPI;
 import io.wispforest.accessories.api.Accessory;
+import io.wispforest.accessories.api.attributes.AccessoryAttributeBuilder;
 import io.wispforest.accessories.api.client.AccessoriesRendererRegistry;
 import io.wispforest.accessories.api.client.AccessoryRenderer;
 import io.wispforest.accessories.api.client.Side;
@@ -18,13 +20,11 @@ import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 
 import java.util.List;
 
@@ -38,12 +38,12 @@ public class BowtieAccessory implements Accessory {
     }
     private final int COOLDOWN = 106; //nijika's birthday is 5/29. 5.29 * 20 ticks = 105.8. dont tell anyone i rounded it down to 106
     private int t = 0;
+    private final float heal_amount = .4f;
 
     @Override
     public void tick(ItemStack stack, SlotReference reference) {
-        if (!hasEffect(stack)){return;}
         if (t > COOLDOWN){
-            reference.entity().heal(.25f);
+            reference.entity().heal(heal_amount);
             t = 0;
         }
         t++;
@@ -55,18 +55,10 @@ public class BowtieAccessory implements Accessory {
         Accessory.super.getExtraTooltip(stack, tooltips, tooltipContext, tooltipType);
     }
 
-    private boolean hasEffect(ItemStack stack){
-        ItemAttributeModifiers component = stack.get(DataComponents.ATTRIBUTE_MODIFIERS);
-        if (component == null) {
-            return false;
-        }
-        for (ItemAttributeModifiers.Entry entry : component.modifiers()) {
-            AttributeModifier modifier = entry.modifier();
-            if (modifier.id().equals(ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, "health_regen"))) {
-                return true;
-            }
-        }
-        return false;
+    @Override
+    public void getDynamicModifiers(ItemStack stack, io.wispforest.accessories.api.slot.SlotReference reference, AccessoryAttributeBuilder builder) {
+        if (reference.slotName().equals("necklace"))
+            builder.addStackable(BocchiAttributes.HEALTH_REGEN, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, "bowtie_health_regen"), heal_amount/2, AttributeModifier.Operation.ADD_VALUE));
     }
 
     @Environment(EnvType.CLIENT)
