@@ -7,6 +7,7 @@ public class BocchiAccessories {
     public static void init(){
         BowtieAccessory.init();
         KessokuBandAccessory.init();
+        SakeAccessory.init();
     }
     @Environment(EnvType.CLIENT)
     public static void initClient(){

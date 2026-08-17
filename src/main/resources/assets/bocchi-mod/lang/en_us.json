@@ -17,6 +17,10 @@
   "item.bocchi-mod.nijika_bowtie": "Nijika's Red Bowtie",
   "item.bocchi-mod.nijika_bowtie.subtitle": "\"Is this what they call a sister complex?\"",
   "bocchi-mod.health_regen": "HP every 5.29s",
+  "item.bocchi-mod.onikoroshi_sake": "Onikoroshi Sake",
+  "item.bocchi-mod.onikoroshi_sake.ability": "Ability: Happiness Spiral",
+  "item.bocchi-mod.onikoroshi_sake.effect": "When you reach 1/3 HP, recover 1 heart and gain one of the following effects:",
+  "item.bocchi-mod.onikoroshi_sake.subtitle": "\"Kids, try this at home!\"",
 
   "block.bocchi-mod.rhodochrosite_block": "Rhodochrosite Block",
   "block.bocchi-mod.budding_rhodochrosite_block": "Budding Rhodochrosite",

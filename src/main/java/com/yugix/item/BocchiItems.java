@@ -8,12 +8,19 @@ import immersive_melodies.client.animation.animators.Animator;
 import immersive_melodies.client.animation.animators.LuteAnimator;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.alchemy.PotionContents;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
+
+import java.util.List;
+import java.util.Optional;
 
 import static immersive_melodies.Items.*;
 
@@ -33,6 +40,14 @@ public class BocchiItems {
     public static final Item KESSOKU_BAND = register(new Item(new Item.Properties().stacksTo(1)), "kessoku_band");
     public static final Item WORN_KESSOKU_BAND = register(new Item(new Item.Properties()), "worn_kessoku_band");
     public static final Item BOWTIE = register(new Item(new Item.Properties().stacksTo(1)), "nijika_bowtie");
+    public static final PotionContents SAKE_CONTENTS = new PotionContents(Optional.empty(), Optional.empty(), List.of(
+            new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 0),
+            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 0),
+            new MobEffectInstance(MobEffects.HUNGER, 600, 0),
+            new MobEffectInstance(MobEffects.WEAKNESS, 600, 0),
+            new MobEffectInstance(MobEffects.POISON, 600, 0)));
+    public static final Item SAKE = register(new Item(new Item.Properties().stacksTo(1).component(DataComponents.POTION_CONTENTS, SAKE_CONTENTS)), "onikoroshi_sake");
+
 
     static Item register(Item item, String id){
         return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, id), item);
