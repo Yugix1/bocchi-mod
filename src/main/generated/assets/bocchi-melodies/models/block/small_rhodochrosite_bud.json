@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bocchi-melodies:block/small_rhodochrosite_bud"
+  }
+}

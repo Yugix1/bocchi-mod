@@ -1,6 +1,6 @@
-// 1.21.1	2026-08-06T21:04:49.9182078	Bocchi Melodies/Block Loot Tables
-2a93d30ec3d078af9fc3b81a1435ff974ef5041f data\bocchi-mod\loot_table\blocks\small_rhodochrosite_bud.json
-d4677b990a14b73319ff454ac12202deec0fff47 data\bocchi-mod\loot_table\blocks\large_rhodochrosite_bud.json
-bb12f527d8136bde894e9d08c48946e1de3c9989 data\bocchi-mod\loot_table\blocks\rhodochrosite_cluster.json
-cdbbe9456cb5d0d15a1e013bb383608e8f43fbdc data\bocchi-mod\loot_table\blocks\medium_rhodochrosite_bud.json
-14c47ecb703d08413ca270c1eb02bbf02a01c1de data\bocchi-mod\loot_table\blocks\rhodochrosite_block.json
+// 1.21.1	2026-08-23T18:16:31.3173548	Bocchi Melodies/Block Loot Tables
+42cad36c4ff6f02d8fa67ea79b776d96da43e8e8 data\bocchi-melodies\loot_table\blocks\medium_rhodochrosite_bud.json
+32aa49eb0ff5e9ad8d1bc9644cd3c0b14803e869 data\bocchi-melodies\loot_table\blocks\small_rhodochrosite_bud.json
+7f7b7212b0d005715dfe8d81aed646e5e4d3c204 data\bocchi-melodies\loot_table\blocks\rhodochrosite_cluster.json
+e6b103e69be3ccebc323fd3f53ab772fd41a2397 data\bocchi-melodies\loot_table\blocks\rhodochrosite_block.json
+09e0cf87d73b39d069a1ced50a3ad42ee9e820d7 data\bocchi-melodies\loot_table\blocks\large_rhodochrosite_bud.json

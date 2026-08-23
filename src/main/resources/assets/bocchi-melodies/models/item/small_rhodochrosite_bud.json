@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bocchi-melodies:block/small_rhodochrosite_bud"
+  }
+}

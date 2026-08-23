@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud"
+    },
+    "facing=west": {
+      "model": "bocchi-melodies:block/large_rhodochrosite_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

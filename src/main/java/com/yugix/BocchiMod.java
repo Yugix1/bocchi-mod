@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 import net.minecraft.core.registries.Registries;
 
 public class BocchiMod implements ModInitializer {
-	public static final String MOD_ID = "bocchi-mod";
+	public static final String MOD_ID = "bocchi-melodies";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -36,7 +36,7 @@ public class BocchiMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		LOGGER.info("Hello Fabric world!");
+		// LOGGER.info("Hello Fabric world!");
 
 		BocchiItems.initialize();
 		BocchiAccessories.init();
@@ -47,13 +47,13 @@ public class BocchiMod implements ModInitializer {
 	}
 
 
-	public static final ResourceKey<PlacedFeature> RHODOCHROSITE_GEODE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath("bocchi-mod","rhodochrosite_geode"));
+	public static final ResourceKey<PlacedFeature> RHODOCHROSITE_GEODE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(MOD_ID,"rhodochrosite_geode"));
 
 	public static void initItemGroup(){
 		final ResourceKey<CreativeModeTab> CUSTOM_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, "item_group"));
 		final CreativeModeTab CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
 				.icon(() -> new ItemStack(BocchiItems.BOCCHI_GUITAR))
-				.title(Component.translatable("itemGroup.bocchi-mod"))
+				.title(Component.translatable("itemGroup.bocchi-melodies"))
 				.build();
 		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
 		ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {

@@ -31,11 +31,11 @@ public class BocchiItems {
     public static final Item KESSOKUNITE_CRYSTAL = register(new Item(new Item.Properties()), "kessokunite_crystal");
 
     public static final Item BOCCHI_GUITAR = registerInstrument(BocchiMod.MOD_ID, "bocchi_guitar", new LuteAnimator(), 300, new Vector3f(0.0f, 0.0f, 0.5f),
-            Component.translatable("item.bocchi-mod.bocchi_guitar.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-mod.bocchi_guitar.owner").withStyle(ChatFormatting.GRAY));
+            Component.translatable("item.bocchi-melodies.bocchi_guitar.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-melodies.bocchi_guitar.owner").withStyle(ChatFormatting.GRAY));
     public static final Item KITA_GUITAR = registerInstrument(BocchiMod.MOD_ID, "kita_guitar", new LuteAnimator(), 300, new Vector3f(0.0f, 0.0f, 0.5f),
-            Component.translatable("item.bocchi-mod.kita_guitar.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-mod.kita_guitar.owner").withStyle(ChatFormatting.GRAY));
+            Component.translatable("item.bocchi-melodies.kita_guitar.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-melodies.kita_guitar.owner").withStyle(ChatFormatting.GRAY));
     public static final Item RYO_BASS = registerInstrument(BocchiMod.MOD_ID, "ryo_bass", new LuteAnimator(), 300, new Vector3f(0.0f, 0.0f, 0.5f),
-            Component.translatable("item.bocchi-mod.ryo_bass.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-mod.ryo_bass.owner").withStyle(ChatFormatting.GRAY));
+            Component.translatable("item.bocchi-melodies.ryo_bass.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY), Component.translatable("item.bocchi-melodies.ryo_bass.owner").withStyle(ChatFormatting.GRAY));
 
     public static final Item KESSOKU_BAND = register(new Item(new Item.Properties().stacksTo(1)), "kessoku_band");
     public static final Item WORN_KESSOKU_BAND = register(new Item(new Item.Properties()), "worn_kessoku_band");

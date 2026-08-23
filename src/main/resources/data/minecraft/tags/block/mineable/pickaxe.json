@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "bocchi-mod:small_rhodochrosite_bud",
-    "bocchi-mod:medium_rhodochrosite_bud",
-    "bocchi-mod:large_rhodochrosite_bud",
-    "bocchi-mod:rhodochrosite_cluster",
-    "bocchi-mod:rhodochrosite_block",
-    "bocchi-mod:budding_rhodochrosite_block"
+    "bocchi-melodies:small_rhodochrosite_bud",
+    "bocchi-melodies:medium_rhodochrosite_bud",
+    "bocchi-melodies:large_rhodochrosite_bud",
+    "bocchi-melodies:rhodochrosite_cluster",
+    "bocchi-melodies:rhodochrosite_block",
+    "bocchi-melodies:budding_rhodochrosite_block"
   ]
 }

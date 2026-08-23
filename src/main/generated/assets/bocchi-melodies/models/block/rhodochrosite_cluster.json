@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bocchi-melodies:block/rhodochrosite_cluster"
+  }
+}

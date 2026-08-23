@@ -36,11 +36,11 @@ public class SakeAccessory implements Accessory {
 
     @Override
     public void getExtraTooltip(ItemStack stack, List<Component> tooltips, Item.TooltipContext tooltipContext, TooltipFlag tooltipType) {
-        tooltips.add(Component.translatable("item.bocchi-mod.onikoroshi_sake.ability").withStyle(ChatFormatting.GOLD));
-        tooltips.add(Component.translatable("item.bocchi-mod.onikoroshi_sake.effect").withStyle(ChatFormatting.GRAY));
+        tooltips.add(Component.translatable("item.bocchi-melodies.onikoroshi_sake.ability").withStyle(ChatFormatting.GOLD));
+        tooltips.add(Component.translatable("item.bocchi-melodies.onikoroshi_sake.effect").withStyle(ChatFormatting.GRAY));
         potionContents.addPotionTooltip(tooltips::add, 1.0F, tooltipContext.tickRate());
         tooltips.removeLast(); tooltips.removeLast(); tooltips.removeLast(); tooltips.removeLast();
-        tooltips.add(Component.translatable("item.bocchi-mod.onikoroshi_sake.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY));
+        tooltips.add(Component.translatable("item.bocchi-melodies.onikoroshi_sake.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY));
         Accessory.super.getExtraTooltip(stack, tooltips, tooltipContext, tooltipType);
     }
 }

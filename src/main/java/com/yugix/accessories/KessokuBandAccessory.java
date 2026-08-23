@@ -49,7 +49,7 @@ public class KessokuBandAccessory implements Accessory {
     }
     @Override
     public void getExtraTooltip(ItemStack stack, List<Component> tooltips, Item.TooltipContext tooltipContext, TooltipFlag tooltipType) {
-        tooltips.add(Component.translatable("item.bocchi-mod.kessoku_band.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY));
+        tooltips.add(Component.translatable("item.bocchi-melodies.kessoku_band.subtitle").withStyle(ChatFormatting.ITALIC).withStyle(ChatFormatting.DARK_GRAY));
         Accessory.super.getExtraTooltip(stack, tooltips, tooltipContext, tooltipType);
     }
     @Environment(EnvType.CLIENT)

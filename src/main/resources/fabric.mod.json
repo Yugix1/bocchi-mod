@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "bocchi-mod",
+	"id": "bocchi-melodies",
 	"version": "${version}",
 	"name": "Bocchi Melodies",
 	"description": "An addon for Immersive Melodies that adds Kessoku Band's instruments, plus some other cool stuff related to Bocchi the Rock",
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"bocchi-mod.mixins.json"
+		"bocchi-melodies.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",

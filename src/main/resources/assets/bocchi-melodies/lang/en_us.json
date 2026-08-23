@@ -1,0 +1,31 @@
+{
+  "itemGroup.bocchi-melodies": "Bocchi Melodies",
+
+  "item.bocchi-melodies.bocchi_guitar": "Gibson Les Paul Custom (1968 Reissue Ebony)",
+  "item.bocchi-melodies.bocchi_guitar.subtitle": "\"Maybe even someone like me can shine if I'm in a band!\"",
+  "item.bocchi-melodies.bocchi_guitar.owner": "A guitar belonging to Hitori Gotoh.",
+  "item.bocchi-melodies.kita_guitar": "Gibson Les Paul Junior DC (Pelham Blue)",
+  "item.bocchi-melodies.kita_guitar.subtitle": "\"Gotoh-san, I'm going to work even harder at practice than ever!\"",
+  "item.bocchi-melodies.kita_guitar.owner": "A guitar belonging to Ikuyo Kita.",
+  "item.bocchi-melodies.ryo_bass": "Fender Mexican Standard Precision Bass (Olympic White)",
+  "item.bocchi-melodies.ryo_bass.subtitle": "\"Abandoning your uniqueness is equivalent to dying.\"",
+  "item.bocchi-melodies.ryo_bass.owner": "A bass belonging to Ryo Yamada.",
+
+  "item.bocchi-melodies.kessokunite_crystal": "Kessokunite Crystal",
+  "item.bocchi-melodies.kessoku_band": "Kessoku Band",
+  "item.bocchi-melodies.kessoku_band.subtitle": "\"It's the worst pun! We're totally changing it!\"",
+  "item.bocchi-melodies.nijika_bowtie": "Nijika's Red Bowtie",
+  "item.bocchi-melodies.nijika_bowtie.subtitle": "\"Is this what they call a sister complex?\"",
+  "bocchi-melodies.health_regen": "HP every 5.29s",
+  "item.bocchi-melodies.onikoroshi_sake": "Onikoroshi Sake",
+  "item.bocchi-melodies.onikoroshi_sake.ability": "Ability: Happiness Spiral",
+  "item.bocchi-melodies.onikoroshi_sake.effect": "When you reach 1/3 HP, recover 1 heart and gain one of the following effects:",
+  "item.bocchi-melodies.onikoroshi_sake.subtitle": "\"Kids, try this at home!\"",
+
+  "block.bocchi-melodies.rhodochrosite_block": "Rhodochrosite Block",
+  "block.bocchi-melodies.budding_rhodochrosite_block": "Budding Rhodochrosite",
+  "block.bocchi-melodies.small_rhodochrosite_bud": "Small Rhodochrosite Bud",
+  "block.bocchi-melodies.medium_rhodochrosite_bud": "Medium Rhodochrosite Bud",
+  "block.bocchi-melodies.large_rhodochrosite_bud": "Large Rhodochrosite Bud",
+  "block.bocchi-melodies.rhodochrosite_cluster": "Rhodochrosite"
+}

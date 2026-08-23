@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "bocchi-mod:item/kessoku_band"
-  }
-}
