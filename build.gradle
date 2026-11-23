@@ -46,7 +46,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	modImplementation("immersive_melodies:immersive_melodies-fabric:0.6.4+1.21.1")
+	modImplementation("net.conczin:immersive_melodies:0.8.1+1.21.1+fabric")
 	modImplementation("io.wispforest:accessories-fabric:1.1.0-beta.53+1.21.1")
 }
 
