@@ -27,5 +27,10 @@
   "block.bocchi-melodies.small_rhodochrosite_bud": "Small Rhodochrosite Bud",
   "block.bocchi-melodies.medium_rhodochrosite_bud": "Medium Rhodochrosite Bud",
   "block.bocchi-melodies.large_rhodochrosite_bud": "Large Rhodochrosite Bud",
-  "block.bocchi-melodies.rhodochrosite_cluster": "Rhodochrosite"
+  "block.bocchi-melodies.rhodochrosite_cluster": "Rhodochrosite",
+  "block.bocchi-melodies.bocchi_plushie": "Hitori Gotoh Plushie",
+  "block.bocchi-melodies.kita_plushie": "Ikuyo Kita Plushie",
+  "block.bocchi-melodies.ryo_plushie": "Ryo Yamada Plushie",
+  "block.bocchi-melodies.nijika_plushie": "Nijika Ijichi Plushie"
+
 }

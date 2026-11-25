@@ -14,6 +14,10 @@ public class BocchiModClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.MEDIUM_RHODOCHROSITE_BUD, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.LARGE_RHODOCHROSITE_BUD, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.RHODOCHROSITE_CLUSTER, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.BOCCHI_PLUSHIE, RenderType.translucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.NIJIKA_PLUSHIE, RenderType.translucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.RYO_PLUSHIE, RenderType.translucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(BocchiBlocks.KITA_PLUSHIE, RenderType.translucent());
 		BocchiAccessories.initClient();
 	}
 }

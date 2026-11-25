@@ -22,6 +22,10 @@ public class BocchiBlocks {
     public static final Block MEDIUM_RHODOCHROSITE_BUD = register(new AmethystClusterBlock(3.0F, 4.0F,BlockBehaviour.Properties.ofLegacyCopy(AMETHYST_CLUSTER).sound(SoundType.MEDIUM_AMETHYST_BUD).lightLevel((blockStatex) -> 6)), "medium_rhodochrosite_bud");
     public static final Block LARGE_RHODOCHROSITE_BUD = register(new AmethystClusterBlock(3.0F, 4.0F,BlockBehaviour.Properties.ofLegacyCopy(AMETHYST_CLUSTER).sound(SoundType.LARGE_AMETHYST_BUD).lightLevel((blockStatex) -> 10)), "large_rhodochrosite_bud");
     public static final Block RHODOCHROSITE_CLUSTER = register(new AmethystClusterBlock(7.0F, 3.0F, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).forceSolidOn().noOcclusion().sound(SoundType.AMETHYST_CLUSTER).strength(1.5F).lightLevel((blockStatex) -> 12).pushReaction(PushReaction.DESTROY)), "rhodochrosite_cluster");
+    public static final Block BOCCHI_PLUSHIE = register(new CarvedPumpkinBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).noOcclusion()), "bocchi_plushie");
+    public static final Block NIJIKA_PLUSHIE = register(new CarvedPumpkinBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).noOcclusion()), "nijika_plushie");
+    public static final Block RYO_PLUSHIE = register(new CarvedPumpkinBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).noOcclusion()), "ryo_plushie");
+    public static final Block KITA_PLUSHIE = register(new CarvedPumpkinBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOL).noOcclusion()), "kita_plushie");
 
     static Block register(Block block, String id){
         Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(BocchiMod.MOD_ID, id), new BlockItem(block, new Item.Properties()));
