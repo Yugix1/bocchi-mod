@@ -46,7 +46,7 @@ public class BocchiItems {
             new MobEffectInstance(MobEffects.HUNGER, 600, 0),
             new MobEffectInstance(MobEffects.WEAKNESS, 600, 0),
             new MobEffectInstance(MobEffects.POISON, 600, 0)));
-    public static final Item SAKE = register(new Item(new Item.Properties().stacksTo(1).component(DataComponents.POTION_CONTENTS, SAKE_CONTENTS)), "onikoroshi_sake");
+    public static final Item ONIKOROSHI_SAKE = register(new Item(new Item.Properties().stacksTo(1).component(DataComponents.POTION_CONTENTS, SAKE_CONTENTS)), "onikoroshi_sake");
 
 
     static Item register(Item item, String id){

@@ -62,6 +62,7 @@ public class BocchiMod implements ModInitializer {
 			itemGroup.accept(BocchiItems.RYO_BASS);
 			itemGroup.accept(BocchiItems.KESSOKU_BAND);
 			itemGroup.accept(BocchiItems.BOWTIE);
+			itemGroup.accept(BocchiItems.ONIKOROSHI_SAKE);
 			itemGroup.accept(BocchiBlocks.RHODOCHROSITE_BLOCK);
 			itemGroup.accept(BocchiBlocks.BUDDING_RHODOCHROSITE_BLOCK);
 			itemGroup.accept(BocchiBlocks.SMALL_RHODOCHROSITE_BUD);

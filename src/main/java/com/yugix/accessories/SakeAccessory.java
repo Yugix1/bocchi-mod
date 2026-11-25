@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class SakeAccessory implements Accessory {
     public static void init(){
-        AccessoriesAPI.registerAccessory(BocchiItems.SAKE, new SakeAccessory());
+        AccessoriesAPI.registerAccessory(BocchiItems.ONIKOROSHI_SAKE, new SakeAccessory());
     }
     private boolean flag;
     private final PotionContents potionContents = BocchiItems.SAKE_CONTENTS;
